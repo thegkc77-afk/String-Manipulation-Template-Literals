@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation & Template Literals</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const sentence = prompt("Enter a sentence:");
+    const wordCount = sentence.trim().split().length;
+
+
+    const oldWord = prompt("Enter the word to replace:");
+    const newWord = prompt("Enter the new word:");
+
+
+    const replacedSentence = sentence.replaceAll(oldWord, newWord);
+    const substring = prompt("Enter a word to check its presence:");
+
+    const isPresent = sentence.includes(substring);
+    
+    alert(`Original Sentence: ${sentence}
+    Total Words: ${wordCount}
+    After Replacement: ${replacedSentence}
+    Is "${substring}" present?: ${isPresent ? "Yes" : "No"}`);
+
+</script>
+</html>
